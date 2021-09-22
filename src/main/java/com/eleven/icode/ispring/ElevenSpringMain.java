@@ -13,6 +13,11 @@ public class ElevenSpringMain {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(MainConfig.class);
         Object obj = context.getBean("elevenFactoryBean");
         System.out.println(obj.getClass().getName());
-
+        {
+            Car car = (Car) context.getBean("car");
+            System.out.println(car.getName());
+            System.out.println(car.getTank());
+            System.out.println(car.getTank2());
+        }
     }
 }

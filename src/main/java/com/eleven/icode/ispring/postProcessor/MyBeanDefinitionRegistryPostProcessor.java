@@ -13,7 +13,7 @@ public class MyBeanDefinitionRegistryPostProcessor implements BeanDefinitionRegi
     @Override
     public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
         // 获得bean定义i
-        RootBeanDefinition car = (RootBeanDefinition) beanFactory.getBeanDefinition("car");
+//        RootBeanDefinition car = (RootBeanDefinition) beanFactory.getBeanDefinition("car");
         // 修改Class
         // car.setBeanClass(Tank.class);
         // 设置默认值 相当于xml:<property name="name" value="徐庶"/>
@@ -32,8 +32,8 @@ public class MyBeanDefinitionRegistryPostProcessor implements BeanDefinitionRegi
 
     @Override
     public void postProcessBeanDefinitionRegistry(BeanDefinitionRegistry registry) throws BeansException {
-        RootBeanDefinition beanDefinition = new RootBeanDefinition();
-        beanDefinition.setBeanClass(Tank.class);
-        registry.registerBeanDefinition("car", beanDefinition);
+//        RootBeanDefinition beanDefinition = new RootBeanDefinition();
+//        beanDefinition.setBeanClass(Tank.class);
+//        registry.registerBeanDefinition("car", beanDefinition);
     }
 }
