@@ -18,6 +18,7 @@ public class ElevenSpringMain {
             System.out.println(car.getName());
             System.out.println(car.getTank());
             System.out.println(car.getTank2());
+            car.transfer();
         }
     }
 }

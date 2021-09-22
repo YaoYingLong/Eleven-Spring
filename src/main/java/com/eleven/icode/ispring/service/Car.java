@@ -1,11 +1,13 @@
 package com.eleven.icode.ispring.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-//@Component
+@Component
 public class Car {
     private String name;
+    @Autowired
     private Tank tank;
     private Tank tank2;
 
@@ -41,5 +43,9 @@ public class Car {
 
     public void init() {
         System.out.println("car init ...");
+    }
+
+    public void transfer() {
+        System.out.println("Car transfer...");
     }
 }
