@@ -10,19 +10,19 @@ import org.springframework.stereotype.Component;
 /**
  * @author by YingLong on 2021/9/22
  */
-//@Aspect
-//@Component
-//@EnableAspectJAutoProxy
+@Aspect
+@Component
+@EnableAspectJAutoProxy
 public class AopConfig {
 
-//    @Pointcut(value = "execution(* com.eleven.icode.ispring.service.Car.transfer(..))")
-//    private void demo() {  // 切点签名方法
-//        System.out.println("Aop demo...");
-//    }
-//
-//    @Before(value = "demo()")
-//    public void before(JoinPoint jp) {
-//        System.out.println("Aop Before...");
-//    }
+    @Pointcut(value = "execution(* com.eleven.icode.ispring.service.Car.transfer(..))")
+    private void demo() {  // 切点签名方法
+        System.out.println("Aop demo...");
+    }
+
+    @Before(value = "demo()")
+    public void before(JoinPoint jp) {
+        System.out.println("Aop Before...");
+    }
 
 }

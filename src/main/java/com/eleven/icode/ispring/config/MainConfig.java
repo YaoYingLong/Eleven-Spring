@@ -24,9 +24,9 @@ public class MainConfig {
 //        return car;
 //    }
 //
-    @Bean(initMethod = "initMethod")
-    public Tank tank(){
-        System.out.println("Tank通过@Bean注册Bean");
-        return new Tank();
-    }
+//    @Bean(initMethod = "initMethod")
+//    public Tank tank(){
+//        System.out.println("Tank通过@Bean注册Bean");
+//        return new Tank();
+//    }
 }
