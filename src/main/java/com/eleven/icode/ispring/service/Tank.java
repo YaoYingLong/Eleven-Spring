@@ -1,5 +1,6 @@
 package com.eleven.icode.ispring.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -10,6 +11,10 @@ public class Tank {
     @Value(value = "${index:1}")
     private Integer index;
     private String name;
+    @Autowired
+    private Car car;
+
+
 
     public Tank() {
         System.out.println("tank加载");
