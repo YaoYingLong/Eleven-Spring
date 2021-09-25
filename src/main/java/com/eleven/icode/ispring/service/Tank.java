@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 
-//@Component
+@Component
 public class Tank {
     @Value(value = "${index:1}")
     private Integer index;
@@ -43,5 +43,8 @@ public class Tank {
 
     public void initMethod() {
         System.out.println("tank init ...");
+    }
+    public void destroyMethod() {
+        System.out.println("tank destroyMethod ...");
     }
 }

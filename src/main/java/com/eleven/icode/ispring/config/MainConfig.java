@@ -1,18 +1,22 @@
 package com.eleven.icode.ispring.config;
 
-import com.eleven.icode.ispring.service.Car;
 import com.eleven.icode.ispring.service.Tank;
-import org.springframework.context.annotation.*;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.event.ApplicationEventMulticaster;
+import org.springframework.context.event.SimpleApplicationEventMulticaster;
+import org.springframework.core.task.SimpleAsyncTaskExecutor;
 
 /**
  * Created by xsls on 2019/8/15.
  */
 @Configuration
 @ComponentScan(basePackages = {"com.eleven.icode.ispring"})
-        //excludeFilters={@ComponentScan.Filter(type=FilterType.ANNOTATION,value={Controller.class})})
+//excludeFilters={@ComponentScan.Filter(type=FilterType.ANNOTATION,value={Controller.class})})
 public class MainConfig {
 
-//    @Bean(value = "car")
+    //    @Bean(value = "car")
 //    public Car car(){
 //        Car car = new Car();
 //        car.setName("testCar");
@@ -24,9 +28,16 @@ public class MainConfig {
 //        return car;
 //    }
 //
-//    @Bean(initMethod = "initMethod")
-//    public Tank tank(){
+//    @Bean(initMethod = "initMethod", destroyMethod = "destroyMethod")
+//    public Tank tank() {
 //        System.out.println("Tank通过@Bean注册Bean");
 //        return new Tank();
+//    }
+
+//    @Bean(name = "applicationEventMulticaster")
+//    public ApplicationEventMulticaster simpleApplicationEventMulticaster() {
+//        SimpleApplicationEventMulticaster eventMulticaster = new SimpleApplicationEventMulticaster();
+//        eventMulticaster.setTaskExecutor(new SimpleAsyncTaskExecutor());
+//        return eventMulticaster;
 //    }
 }
