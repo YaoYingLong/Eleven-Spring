@@ -4,10 +4,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PreDestroy;
+
 @Component
 public class Car {
     private String name;
-//    @Autowired
+    @Autowired
     private Tank tank;
     private Tank tank2;
 
@@ -47,5 +49,10 @@ public class Car {
 
     public void transfer() {
         System.out.println("Car transfer...");
+    }
+
+    @PreDestroy
+    public void preDestroy() {
+        System.out.println("Car调用注解的销毁===== destroy");
     }
 }
