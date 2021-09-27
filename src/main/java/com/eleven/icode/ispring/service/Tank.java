@@ -11,7 +11,7 @@ public class Tank {
     @Value(value = "${index:1}")
     private Integer index;
     private String name;
-    @Autowired
+//    @Autowired
     private Car car;
 
 
