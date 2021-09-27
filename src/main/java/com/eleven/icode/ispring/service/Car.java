@@ -9,7 +9,7 @@ import javax.annotation.PreDestroy;
 @Component
 public class Car {
     private String name;
-    @Autowired
+//    @Autowired
     private Tank tank;
     private Tank tank2;
 

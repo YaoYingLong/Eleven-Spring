@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 
-@Component
+//@Component
 public class Tank {
     @Value(value = "${index:1}")
     private Integer index;
