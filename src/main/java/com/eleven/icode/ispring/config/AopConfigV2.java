@@ -14,7 +14,7 @@ import java.util.Arrays;
 @Component
 public class AopConfigV2 {
 
-    @Pointcut(value = "execution(* com.eleven.icode.ispring.service.Car.transfer(..))")
+    @Pointcut(value = "execution(* com.eleven.icode.ispring.service.Car.init(..))")
     private void pointCut() {
     }
 

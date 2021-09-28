@@ -1,5 +1,6 @@
 package com.eleven.icode.ispring.service;
 
+import org.springframework.aop.framework.AopContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -45,10 +46,12 @@ public class Car {
 
     public void init() {
         System.out.println("car init ...");
+        ((CarSuper)AopContext.currentProxy()).transfer();
     }
 
     public void transfer() {
         System.out.println("Car transfer...");
+//        throw new RuntimeException();
     }
 
     @PreDestroy

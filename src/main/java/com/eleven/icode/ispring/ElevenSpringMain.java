@@ -3,6 +3,7 @@ package com.eleven.icode.ispring;
 import com.eleven.icode.ispring.aop.earlyAop.Calculate;
 import com.eleven.icode.ispring.config.MainConfig;
 import com.eleven.icode.ispring.service.Car;
+import com.eleven.icode.ispring.service.CarSuper;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
@@ -20,6 +21,7 @@ public class ElevenSpringMain {
 //            System.out.println(car.getTank());
 //            System.out.println(car.getTank2());
             car.transfer();
+//            car.init();
         }
     }
 }
