@@ -1,12 +1,7 @@
 package com.eleven.icode.ispring.config;
 
-import com.eleven.icode.ispring.service.Tank;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.event.ApplicationEventMulticaster;
-import org.springframework.context.event.SimpleApplicationEventMulticaster;
-import org.springframework.core.task.SimpleAsyncTaskExecutor;
 
 /**
  * Created by xsls on 2019/8/15.

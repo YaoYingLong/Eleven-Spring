@@ -1,8 +1,7 @@
-package com.eleven.icode.ispring.service;
+package com.eleven.icode.ispring.service.impl;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import com.eleven.icode.ispring.service.impl.Car;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 

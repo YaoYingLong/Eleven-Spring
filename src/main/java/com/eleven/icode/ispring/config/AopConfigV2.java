@@ -10,11 +10,11 @@ import java.util.Arrays;
 /**
  * @author by YingLong on 2021/9/22
  */
-@Aspect
-@Component
+//@Aspect
+//@Component
 public class AopConfigV2 {
 
-    @Pointcut(value = "execution(* com.eleven.icode.ispring.service.Car.init(..))")
+    @Pointcut(value = "execution(* com.eleven.icode.ispring.service.impl.Car.init(..))")
     private void pointCut() {
     }
 

@@ -11,12 +11,12 @@ import java.util.Arrays;
 /**
  * @author by YingLong on 2021/9/22
  */
-@Aspect
-@Component
-@EnableAspectJAutoProxy(exposeProxy = true)
+//@Aspect
+//@Component
+//@EnableAspectJAutoProxy(exposeProxy = true)
 public class AopConfig {
 
-    @Pointcut(value = "execution(* com.eleven.icode.ispring.service.Car.transfer(..))")
+    @Pointcut(value = "execution(* com.eleven.icode.ispring.service.impl.Car.transfer(..))")
     private void pointCut() {
     }
 

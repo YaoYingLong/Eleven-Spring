@@ -1,6 +1,6 @@
 package com.eleven.icode.ispring.config;
 
-import com.eleven.icode.ispring.service.Car;
+import com.eleven.icode.ispring.service.impl.Car;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.support.GenericBeanDefinition;
 import org.springframework.context.annotation.ImportBeanDefinitionRegistrar;
