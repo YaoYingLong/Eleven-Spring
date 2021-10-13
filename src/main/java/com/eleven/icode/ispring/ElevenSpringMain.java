@@ -1,6 +1,8 @@
 package com.eleven.icode.ispring;
 
 import com.eleven.icode.ispring.config.MainConfig;
+import com.eleven.icode.ispring.entity.UserNew;
+import com.eleven.icode.ispring.mapper.UserMapper;
 import com.eleven.icode.ispring.service.PayService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -22,8 +24,11 @@ public class ElevenSpringMain {
 //            car.init();
         }
         {
-            PayService payService = (PayService) context.getBean("payServiceImpl");
-            payService.pay("123456789", 10);
+//            PayService payService = (PayService) context.getBean("payServiceImpl");
+//            payService.pay("123456789", 10);
         }
+        UserMapper userMapper = (UserMapper) context.getBean("userMapper");
+        UserNew user = userMapper.selectById(1L);
+        System.out.println(user.getUserName());
     }
 }
